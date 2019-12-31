@@ -1,6 +1,6 @@
 import * as core from '@actions/core'
 
-async function run(): Promise<void> {
+async function runAction(): Promise<void> {
   try {
     const input = core.getInput('who-to-greet')
     core.setOutput('greeting', `hello ${input}`)
@@ -9,4 +9,4 @@ async function run(): Promise<void> {
   }
 }
 
-run()
+runAction()
